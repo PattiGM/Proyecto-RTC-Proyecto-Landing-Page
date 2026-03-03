@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Buscador de Mercedes-Benz">
+    <meta name="robots" content="index, follow">
+
+    <meta name="author" content="Patricia Garrido">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="stylesheet" href="styles_proyecto1-master.css">
+    <link rel="icon" type="image/png" href="img/logos/mercedes-benz/logo_mercedes-benz.png">
+
+    <title>Buscador Mercedes-Benz</title>
+</head>
+<body id="top">
+<header>
+    <nav class="menu" aria-label="Menú principal">
+        <div class="izq">
+            <ul class="btn-izquierda">
+                <li>
+                    <a href="https://www.mercedes-benz.es/passengercars/models.html?group=all">Modelos</a>
+                </li>
+
+                <li>
+                    <a href="https://www.mercedes-benz.es/passengercars/buy/new-car.html">Comprar</a>
+                </li>
+
+                <li>
+                    <a href="https://www.mercedes-benz.es/passengercars/services.html">Servicios</a>
+                </li>
+
+                <li>
+                    <a href="https://www.mercedes-benz.es/passengercars/brand.html">Marca</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="inicio_logo">
+            <a href="https://www.mercedes-benz.es/" target="_self">
+                <img src="img/logos/mercedes-benz/logo_mercedes-benz.png" alt="Logo Mercedes-Benz">
+            </a>
+        </div>
+
+        <div class="responsive">
+            <div class="der">
+                <ul class="btn-derecha">
+                    <li class="proveedor">
+                        <a href="https://www.mercedes-benz.es/passengercars/content-pool/tool-pages/legal/copyright.html">Proveedor...</a>
+                    </li>
+
+                    <li class="btn-buscador">
+                        <a href="form-buscador.html" class="btn-buscar" target="_self">
+                            <img src="img/otros/icon-search.png" alt="buscador Mercedes-Benz">
+                        </a>
+                    </li>
+
+                    <li class="btn-favoritos">
+                        <a href="favorito.html" class="btn-favorito" target="_self">
+                            <img src="img/otros/icon-favorito.png" alt="Mis favoritos">
+                        </a>
+                    </li>
+
+                    <li class="btn-usuario">
+                        <a href="info-usuario.html" class="btn-iniciar-sesion" target="_self">
+                            <img src="img/otros/icon-usuari.png" alt="Iniciar Sesión">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <button type="button" class="btn-menu-responsive">
+                <img src="img/otros/icon-menu-responsive.png" alt="icono menu hamburguesa" class="icon-responsive">
+            </button>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="form-buscador">
+        <form class="form-buscar"
+              name="searchForm"
+              action="https://www.mercedes-benz.es/passengercars/mercedes-benz-cars/search.html"
+              method="get">
+            <div class="titulo-buscador">
+                <h2>Buscador <span>Mercedes-Benz</span></h2>
+            </div>
+            <div>
+                <label for="search"></label>
+                   <div class="contenedor-buscador">
+                        <button class="lupa" type="submit">
+                            <img class="img-lupa" src="img/otros/icon-search-black.png" alt="icono lupa black">
+                        </button>
+                        <input type="search" id="search" name="search" placeholder="Tu búsqueda / Código del configurador"
+                               required>
+                   </div>
+
+            </div>
+            <p>Puedes realizar búsquedas indicando el tipo de vehículo, el modelo, códigos de configuración o
+                bien buscar accesorios, otros productos e información.</p>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <div class="container-grey">
+        <p>¿Preparado para hacer tuyo el coche de tus sueños? <span>Mercedes-Maybach te espera en nuestros concesionarios,
+            exclusivamente con cita previa.</span></p>
+    </div>
+
+    <div class="container-black">
+        <section class="newsletter">
+            <div class="tittle-newsletter">
+                <h3>Únete al poder.</h3>
+
+                <h4>Regístrate a nuestra newsletter.</h4>
+            </div>
+
+            <form class="form-newsletter" name="form-newsletter" action="" method="post">
+                <label for="mail" class="input-group">
+                    <input type="email" id="mail" name="email" placeholder="Escribe tu mail aquí" title="email">
+
+                    <button class="btn-newsletter" type="submit">Suscríbete</button>
+                </label>
+
+                <label class="terms-privacy">
+                    <input class="checkbox" type="checkbox" required>
+                    <span class="terms-text">Al registrarme, acepto la <a
+                            href="https://www.mercedes-benz.es/passengercars/content-pool/tool-pages/legal/privacy-statement.html">
+                        política de privacidad</a> de Veloretti.
+                    </span>
+                </label>
+            </form>
+        </section>
+
+        <section class="social">
+            <a href="https://www.facebook.com/MercedesBenzEspana" target="_blank" rel="noopener noreferrer">
+                <img src="img/redes-sociales/icon-facebook.png" alt="logo Facebook">
+            </a>
+
+            <a href="https://x.com/MBenzEspana" target="_blank" rel="noopener noreferrer">
+                <img src="img/redes-sociales/icon-x.png" alt="logo X">
+            </a>
+
+            <a href="https://www.youtube.com/user/MercedesBenzSpain" target="_blank" rel="noopener noreferrer">
+                <img src="img/redes-sociales/icon-youtube.png" alt="logo YouTube">
+            </a>
+
+            <a href="https://www.instagram.com/mbenzespana/" target="_blank" rel="noopener noreferrer">
+                <img src="img/redes-sociales/icon-instagram.png" alt="logo Instagram">
+            </a>
+        </section>
+
+        <nav class="menu-footer" aria-label="Menú secundario">
+            <div class="explorer">
+                <h4>Explorar</h4>
+                <ul>
+                    <li>
+                        <a href="https://www.mercedes-benz.es/passengercars/models.html?filters=ELECTRIC&group=all&subgroup=see-all">Eléctricos</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.mercedes-benz.es/passengercars/models.html?filters=HYBRID&group=all&subgroup=see-all">Híbridos</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.mercedes-benz.es/passengercars/models/suv.html">SUV</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.mercedes-benz.es/passengercars/finance/financing-leasing.html">Financiación
+                            &
+                            leasing</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.mercedes-benz.es/passengercars/technology/e-mobility.html">E-mobility</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.mercedes-benz.es/passengercars/technology/advanced-driver-assistance-systems.html">Intelligent
+                            Drive</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="about">
+                <h4>Descubre Mercedes</h4>
+                <ul>
+                    <li>
+                        <a href="https://www.mercedes-benz.es/passengercars/brand.html">Nosotros</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.mercedes-benz.es/passengercars/brand/sports.html">Mercedes-Benz y el
+                            deporte</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.mercedes-benz.es/passengercars/brand/sustainability.html">Sostenibilidad</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.mercedes-benz.es/passengercars/brand/jobs.html">Trabaja con nosotros</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="help">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li>
+                        <a href="https://www.mercedes-benz.es/passengercars/services/support-contact.html">Contacto</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.mercedes-benz.es/passengercars/services/faq.html">FaQ</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.mercedes-benz.es/passengercars/services/manuals.html">Manuales</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.mercedes-benz.es/passengercars/configurator.html">Configurador &
+                            precios</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.mercedes-benz.es/passengercars/services/warranty.html">Garantía</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.mercedes-benz.es/passengercars/content-pool/tool-pages/legal/legal-notice.html">Aviso
+                            legal</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <a href="#top" class="top">↑</a>
+</footer>
+
+
+</body>
+</html>
