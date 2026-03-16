@@ -1,111 +1,94 @@
-/*FUENTES PERSONALIZADAS */
+/* FUENTES PERSONALIZADAS */
+
 @font-face {
-    font-family: "Abhaya Libre Regular";
-
-    src: url("fonts/abhaya_Libre/AbhayaLibre-Regular.woff2") format("woff2");
-    src: url("fonts/abhaya_Libre/AbhayaLibre-Regular.ttf") format("truetype");
-
+    font-family: "Abhaya Libre";
+    src:
+            url("fonts/abhaya_Libre/AbhayaLibre-Regular.woff2") format("woff2"),
+            url("fonts/abhaya_Libre/AbhayaLibre-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Abhaya Libre Medium";
-
-    src: url("fonts/abhaya_Libre/AbhayaLibre-Medium.woff2") format("woff2");
-    src: url("fonts/abhaya_Libre/AbhayaLibre-Medium.ttf") format("truetype");
-
+    font-family: "Abhaya Libre";
+    src:
+            url("fonts/abhaya_Libre/AbhayaLibre-Medium.woff2") format("woff2"),
+            url("fonts/abhaya_Libre/AbhayaLibre-Medium.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Abhaya Libre Bold";
+    font-family: "Abhaya Libre";
+    src:
+            url("fonts/abhaya_Libre/AbhayaLibre-SemiBold.woff2") format("woff2"),
+            url("fonts/abhaya_Libre/AbhayaLibre-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
 
-    src: url("fonts/abhaya_Libre/AbhayaLibre-Bold.woff2") format("woff2");
-    src: url("fonts/abhaya_Libre/AbhayaLibre-Bold.ttf") format("truetype");
-
+@font-face {
+    font-family: "Abhaya Libre";
+    src:
+            url("fonts/abhaya_Libre/AbhayaLibre-Bold.woff2") format("woff2"),
+            url("fonts/abhaya_Libre/AbhayaLibre-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Abhaya Libre SemiBold";
-
-    src: url("fonts/abhaya_Libre/AbhayaLibre-SemiBold.woff2") format("woff2");
-    src: url("fonts/abhaya_Libre/AbhayaLibre-SemiBold.ttf") format("truetype");
-
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Abhaya Libre ExtraBold";
-
-    src: url("fonts/abhaya_Libre/AbhayaLibre-ExtraBold.woff2") format("woff2");
-    src: url("fonts/abhaya_Libre/AbhayaLibre-ExtraBold.ttf") format("truetype");
-
+    font-family: "Abhaya Libre";
+    src:
+            url("fonts/abhaya_Libre/AbhayaLibre-ExtraBold.woff2") format("woff2"),
+            url("fonts/abhaya_Libre/AbhayaLibre-ExtraBold.ttf") format("truetype");
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "ABeeZee Regular";
-
-    src: url("fonts/aBeeZee/ABeeZee-Regular.woff2") format("woff2");
-    src: url("fonts/aBeeZee/ABeeZee-Regular.ttf") format("truetype");
-
+    font-family: "ABeeZee";
+    src:
+            url("fonts/aBeeZee/ABeeZee-Regular.woff2") format("woff2"),
+            url("fonts/aBeeZee/ABeeZee-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "ABeeZee Italic";
-
-    src: url("fonts/aBeeZee/ABeeZee-Italic.woff2") format("woff2");
-    src: url("fonts/aBeeZee/ABeeZee-Italic.ttf") format("truetype");
-
+    font-family: "ABeeZee";
+    src:
+            url("fonts/aBeeZee/ABeeZee-Italic.woff2") format("woff2"),
+            url("fonts/aBeeZee/ABeeZee-Italic.ttf") format("truetype");
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "Spectral Regular";
-
-    src: url("fonts/spectral/Spectral-Regular.woff2") format("woff2");
-    src: url("fonts/spectral/Spectral-Regular.ttf") format("truetype");
-
+    font-family: "Spectral";
+    src:
+            url("fonts/spectral/Spectral-Regular.woff2") format("woff2"),
+            url("fonts/spectral/Spectral-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Spectral SemiBold";
-
-    src: url("fonts/spectral/Spectral-SemiBold.woff2") format("woff2");
-    src: url("fonts/spectral/Spectral-SemiBold.ttf") format("truetype");
-
+    font-family: "Spectral";
+    src:
+            url("fonts/spectral/Spectral-SemiBold.woff2") format("woff2"),
+            url("fonts/spectral/Spectral-SemiBold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
 }
 
-/* VARIABLES DE FUENTES */
+
 :root {
-    --principal-font: "Abhaya Libre Regular";
-    --principal-medium: "Abhaya Libre Medium";
-    --principal-bold: "Abhaya Libre Bold";
-    --principal-semibold: "Abhaya Libre SemiBold";
-    --principal-extrabold: "Abhaya Libre ExtraBold";
+    /* VARIABLES DE FUENTES */
+    --principal-font: "Abhaya Libre", serif;
+    --secondary-font: "ABeeZee", serif;
+    --button-font: "Spectral", serif;
 
-    --secondary-font: "ABeeZee Regular";
-    --secondary-italic: "ABeeZee Italic";
-
-    --button-regular: "Spectral Regular";
-    --button-semibold: "Spectral SemiBold";
-}
-
-/*VARIABLES DE COLORES */
-:root {
+    /*VARIABLES DE COLORES */
     --principal-color: #000000;
     --secondary-color: #FFFFFF;
     --secondary-color2: #dddddd;
@@ -120,7 +103,7 @@
     --background-features: #D9D9D9;
     --background-square: #A2A2A282;
 
-    --scrool-features: #949494;
+    --scroll-features: #949494;
 
     --gradient-color: #00000000;
     --section-fixed-black: #000;
@@ -133,6 +116,8 @@
     margin: 0;
     border: none;
     background: none;
+
+    outline: 1px solid red;
 }
 
 html {
@@ -163,7 +148,7 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
-    gap: 50px;
+    gap: 20px;
 
     width: 100%;
     height: 84px;
@@ -330,7 +315,8 @@ body {
 }
 
 .titulo-buscador h2 {
-    font-family: var(--principal-extrabold), serif;
+    font-family: var(--principal-font), serif;
+    font-weight: 800;
     font-size: 2rem;
     text-align: center;
     color: var(--principal-color);
@@ -361,11 +347,13 @@ body {
 }
 
 #search {
-    font-family: var(--secondary-italic), serif;
+    font-family: var(--secondary-font), serif;
+    font-style: italic;
     font-size: 1rem;
     text-align: start;
 
-    width: 405px;
+    width: 100%;
+    max-width: 405px;
     height: 56px;
 
     margin: 5px 0;
@@ -377,7 +365,8 @@ body {
 #search:hover {
     outline: none;
 
-    font-family: var(--secondary-italic), serif;
+    font-family: var(--secondary-font), serif;
+    font-style: italic;
     font-size: 1rem;
 
     border: 0;
@@ -409,7 +398,7 @@ body {
 
 
 /*PAGINA FAVORITOS*/
-.favorito {
+.favoritos {
     background-color: var(--secondary-color2);
     box-shadow: 2px 2px 3px 3px var(--principal-color);
 
@@ -432,7 +421,8 @@ body {
 }
 
 .favorito h2 {
-    font-family: var(--principal-extrabold), serif;
+    font-family: var(--principal-font), serif;
+    font-weight: 800;
     font-size: 2rem;
     text-align: center;
     color: var(--principal-color);
@@ -495,7 +485,8 @@ body {
 }
 
 .info-usuario h2 {
-    font-family: var(--principal-extrabold), serif;
+    font-family: var(--principal-font), serif;
+    font-weight: 800;
     font-size: 2rem;
     text-align: center;
     color: var(--principal-color);
@@ -532,7 +523,7 @@ body {
     list-style: none;
 }
 
-.btn-usuario2 {
+.actions-usuario {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -544,7 +535,7 @@ body {
     height: auto;
 }
 
-.btn-usuario2 a {
+.actions-usuario a {
     background-color: var(--button-blue);
 
     color: var(--secondary-color);
@@ -587,12 +578,8 @@ body {
 .banner-principal h1 {
     color: var(--secondary-color);
     font-family: var(--principal-font), serif;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 3.6rem;
-}
-
-.banner-principal h1 span:last-child {
-    display: inline;
 }
 
 .banner-principal h1 span:last-child {
@@ -632,10 +619,11 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: flex-start;
-    justify-items: center;
     justify-content: center;
     align-items: center;
     gap: 0;
+
+    overflow-x: hidden;
 
     list-style: none;
 
@@ -644,7 +632,7 @@ body {
     top: 95%;
 
     width: 100%;
-    height: 58px;
+    height: auto;
 
     padding: 5px;
 }
@@ -659,6 +647,8 @@ body {
     padding: 15px 20px;
 
     align-items: center;
+
+    overflow-x: hidden;
 }
 
 .mercedes-blanco {
@@ -689,7 +679,7 @@ main {
     display:none;
 }
 
-.feature-item {
+.features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -707,7 +697,7 @@ main {
     list-style: none;
 }
 
-.features-item1, .features-item2, .features-item3, .features-item4 {
+.feature-card {
     position: relative;
 
     display: flex;
@@ -734,19 +724,19 @@ main {
 
     top: 40px;
     left: 40px;
-    right: 40px;;
+    right: 40px;
 
     padding: 10px 40px 10px 50px;
 }
 
-.feature-item h3 {
+.features h3 {
     font-family: var(--secondary-font), serif;
     font-size: 2rem;
     font-weight: 300;
     color: var(--principal-color);
 }
 
-.feature-item p {
+.features p {
     font-family: var(--secondary-font), serif;
     font-size: 1.4rem;
     color: var(--principal-color);
@@ -824,14 +814,14 @@ main {
     padding-top: 35px;
 }
 
-.feature-class-g, .feature-suv, .feature-claas-a, .feature-berlina {
+.feature-class-g, .feature-suv, .feature-class-a, .feature-berlina {
     margin-top: 20px;
 
     width: 100%;
     height: auto;
 }
 
-.feature-suv, .feature-claas-a, .feature-berlina {
+.feature-suv, .feature-class-a, .feature-berlina {
     padding-top: 20px;
 }
 
@@ -895,7 +885,7 @@ main {
     width: min(465px, 90%);
     min-height: 300px;
 
-    margin: 31px 0 31px 51px;
+    margin: 31px 0;
     padding: 27px 35px 27px 35px;
 }
 
@@ -913,7 +903,7 @@ main {
 }
 
 .info a {
-    font-family: var(--button-semibold), serif;
+    font-family: var(--button-font), serif;
     font-size: 0.9rem;
     font-weight: 100;
     text-decoration: none;
@@ -946,11 +936,28 @@ main {
 .slider-features {
     scroll-snap-type: x mandatory;
     overflow-x: auto;
-    overflow-y: hidden;
 
-    max-width: 1440px;
+    max-width: min(1440px, 80%);
     width: 100%;
-    height: auto;
+}
+
+/* Estilos para la barra de desplazamiento horizontal */
+.slider-features::-webkit-scrollbar {
+    height: 12px;
+}
+
+.slider-features::-webkit-scrollbar-track {
+    background: var(--secondary-color2);
+    border-radius: 10px;
+}
+
+.slider-features::-webkit-scrollbar-thumb {
+    background: var(--scroll-features);
+    border-radius: 10px;
+}
+
+.slider-features::-webkit-scrollbar-thumb:hover {
+    background: #666666;
 }
 
 .slider-features-item {
@@ -958,7 +965,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     gap: 60px;
 
@@ -968,10 +975,11 @@ main {
     list-style: none;
 
     width: max-content;
+
     height: auto;
 }
 
-.slider-features-item1, .slider-features-item2, .slider-features-item3 {
+.slider-features-card {
     box-sizing: border-box;
 
     display: flex;
@@ -988,7 +996,7 @@ main {
 
     padding: 40px 30px 40px 30px;
 
-    width: min(540px, 90%);
+    width: 540px;
     height: auto;
 
     scroll-snap-align: start;
@@ -1041,7 +1049,7 @@ main {
     object-position: right center;
 }
 
-.slider-features-item1 img {
+.slider-features-card img:first-child {
     width: 100%;
     height: 100%;
 
@@ -1121,7 +1129,7 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 0;
 
     overflow: hidden;
@@ -1272,9 +1280,9 @@ footer {
 }
 
 .tittle-newsletter h4 {
-    font-family: var(--button-regular), serif;
+    font-family: var(--button-font), serif;
     font-size: 0.9rem;
-    font-weight: 539;
+    font-weight: 500;
 }
 
 .form-newsletter {
@@ -1291,8 +1299,8 @@ footer {
     max-width: 467px;
     min-height: 122px;
 
-    font-family: var(--button-regular), serif;
-}
+    font-family: var(--button-font), serif;
+    font-weight: 400;}
 
 .input-group {
     display: flex;
@@ -1308,9 +1316,13 @@ footer {
     height: auto;
 }
 
+.label-texto {
+    visibility: hidden;
+}
+
 #mail {
     color: var(--secondary-color);
-    font-family: var(--button-regular), serif;
+    font-family: var(--button-font), serif;
     font-size: 1rem;
     font-weight: 500;
     text-align: center;
@@ -1320,8 +1332,8 @@ footer {
 }
 
 #mail::placeholder {
-    font-family: var(--button-regular), serif;
-    font-size: 0.8rem;
+    font-family: var(--button-font), serif;
+    font-size: 0.9rem;
     font-weight: 200;
     text-align: center;
 
@@ -1336,7 +1348,7 @@ footer {
 .btn-newsletter {
     background-color: var(--button-color);
 
-    font-family: var(--button-semibold), serif;
+    font-family: var(--button-font), serif;
     font-size: 0.9rem;
     font-weight: 200;
     text-align: center;
@@ -1406,6 +1418,8 @@ footer {
     height: 303px;
 
     padding: 50px 20px 0 20px;
+
+    overflow-x: hidden;
 }
 
 .menu-footer ul {
@@ -1420,7 +1434,7 @@ footer {
 
     padding: 0 10px 0 10px;
 
-    font-family: var(--button-regular), serif;
+    font-family: var(--button-font), serif;
     list-style: none;
     text-align: left;
 }
@@ -1445,14 +1459,15 @@ footer {
 .top {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 30px;
 
     cursor: pointer;
 
     background: var(--secondary-color);
     color: var(--principal-color);
 
-    font-family: var(--button-semibold), serif;
+    font-family: var(--button-font), serif;
+    font-weight: 600;
     font-size: 2rem;
     text-align: center;
     text-decoration: none;
@@ -1460,10 +1475,12 @@ footer {
     border: 1px solid var(--secondary-color);
     border-radius: 180px;
 
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
 
     transition: transform 0.3s ease;
+
+    z-index: 1000;
 }
 
 .top:active {
@@ -1479,7 +1496,6 @@ footer {
         width: 100%;
         height: auto;
     }
-
 
     /*BANNER PRINCIPAL*/
     .banner-text {
@@ -1499,7 +1515,7 @@ footer {
 
 
     /*FEATURES*/
-    .feature-item {
+    .features {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
 
@@ -1688,12 +1704,11 @@ footer {
 
 
     /*FEATURES*/
-    .feature-item {
+    .features {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
     }
-
 
     /*TEXT*/
     .text h2 {
@@ -1705,6 +1720,9 @@ footer {
         margin-left: 0;
     }
 
+    .slider-features-card {
+        width: 330px;
+    }
 
     /*MAPA + TIENDAS*/
     .info {
@@ -1834,7 +1852,7 @@ footer {
         margin: 30px 5px 30px 5px;
 
         max-width: 500px;
-        width: 100%;;
+        width: 100%;
         height: auto;
     }
 
@@ -1863,7 +1881,7 @@ footer {
     }
 
     /*PAGINA FAVORITOS*/
-    .favorito {
+    .favoritos {
         justify-content: space-around;
         gap:10px;
 
@@ -1918,7 +1936,7 @@ footer {
         display: none;
     }
 
-    .btn-usuario2 {
+    .actions-usuario {
         justify-content: space-around;
         gap: 15px;
 
@@ -1956,7 +1974,7 @@ footer {
 
 
     /*FEATURES*/
-    .feature-item {
+    .features {
         grid-template-columns: 1fr;
     }
 
@@ -2166,7 +2184,7 @@ footer {
     /*PÁGINA BUSCADOR*/
     .form-buscar {
         max-width: 400px;
-        width: 100%;;
+        width: 100%;
     }
 
     #search {
@@ -2184,7 +2202,7 @@ footer {
     }
 
     /*PAGINA FAVORITOS*/
-    .favorito {
+    .favoritos {
         width: 400px;
     }
 
@@ -2232,12 +2250,12 @@ footer {
 
 
     /*FEATURES*/
-    .feature-item {
+    .features {
         grid-template-columns: 1fr;
         padding: 10px 10px 0 10px;
     }
 
-    .features-item1, .features-item2, .features-item3, .features-item4 {
+    .feature-card {
         justify-content: space-evenly;
 
         padding-top: 0;
@@ -2254,11 +2272,11 @@ footer {
         top: 0;
     }
 
-    .feature-item h3 {
+    .features h3 {
         font-size: 1.8rem;
     }
 
-    .feature-item p {
+    .features p {
         font-size: 1.2rem;
 
         padding: 0;
@@ -2288,7 +2306,7 @@ footer {
         padding: 10px 30px 10px 30px;
     }
 
-    .feature-class-g, .feature-suv, .feature-claas-a, .feature-berlina {
+    .feature-class-g, .feature-suv, .feature-class-a, .feature-berlina {
         margin-top: 0;
         padding-top: 0;
     }
@@ -2342,7 +2360,7 @@ footer {
         gap: 20px;
     }
 
-    .slider-features-item1, .slider-features-item2, .slider-features-item3 {
+    .slider-features-card {
         align-items: center;
 
         width: 326px;
