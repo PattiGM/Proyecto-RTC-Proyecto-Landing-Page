@@ -199,7 +199,7 @@ body {
 
 /*LOGO INICIO MERCEDES*/
 .inicio_logo {
-    position: absolute;
+    /*position: absolute;*/
 
     align-items: center;
     justify-items: center;
@@ -207,7 +207,7 @@ body {
     margin: 0 20px;
     padding: 10px;
 
-    left: calc(50% - 22.5px);
+    /*left: calc(50% - 22.5px);*/
 }
 
 .inicio_logo img{
@@ -1497,6 +1497,30 @@ footer {
         height: auto;
     }
 
+    /*MENU PRINCIPAL*/
+    .izq {
+        padding: 0;
+    }
+
+    .btn-izquierda {
+        margin: 0;
+    }
+
+    .inicio_logo {
+        margin: 0;
+    }
+
+    .responsive {
+        padding: 0;
+    }
+
+    .btn-derecha {
+        gap: 20px;
+
+        margin: 0;
+        padding: 0;
+    }
+
     /*BANNER PRINCIPAL*/
     .banner-text {
         top: 31%;
@@ -1516,7 +1540,6 @@ footer {
 
     /*FEATURES*/
     .features {
-        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
 
         padding: 20px 40px 0 40px;
